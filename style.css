@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+p#error {
+	color: red;
+	font-weight: bold;
+}
+
+header {
+	background-color: rgba(13, 119, 173, 0.8);
+	height: 60px;
+	color: white;
+}
+
+header > em {
+	font-size: 2.2em;
+	font-style: normal;
+	display: inline-block;
+	margin: 10px 0 0 5px;
+}
+
+nav {
+	background-color: rgba(13, 119, 173, 0.1);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 20%;
+}
+
+nav > ul {
+	list-style: none;
+	margin: 65px 5px 0 5px;
+	overflow: auto
+}
+
+nav > ul > li {
+	background-color: white;
+	border: 1px solid white;
+	margin-bottom: 5px;
+	padding: 3px 6px;
+	cursor: pointer;
+}
+
+nav > ul > li:hover, nav > ul > li.current {
+	border: 1px solid rgba(13, 119, 173, 0.8);
+}
+
+nav > ul > li > strong {
+	font-size: 90%;
+	display: block;
+}
+
+div#main {
+	position: fixed;
+	top: 0;
+	left: 20%;
+	padding: 5px;
+	height: 100%;
+	width: 60%;
+}
+
+div#main > div#tools {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: 30px;
+	color: white;
+}
+
+div#main > div#tools a {
+	color: white;
+	font-size: .9em;
+	text-decoration: none;
+}
+
+div#main > div#tools a#add-note {
+	font-size: 1.3em;
+}
+
+textarea#notepad {
+	margin-top: 60px;
+	width: 100%;
+	height: 500px;
+	font-family: inherit;
+	box-shadow: 3px 3px 3px #ccc;
+	border: none;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+}
