@@ -180,7 +180,7 @@ var SimpleNote = {
     // Create a new note and set it as active
     addNote: function() {
         var noteId = new Date().getTime();
-        window.localStorage.setItem(SimpleNote.prefix + noteId, '(type here)');
+        window.localStorage.setItem(SimpleNote.prefix + noteId, '');
 
         return SimpleNote.setActiveNote(SimpleNote.prefix + noteId);
     },
