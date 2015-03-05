@@ -19,6 +19,7 @@ var SimpleNote = {
     init: function() {
         this.initEvents();
 
+        // Extend the scrollbar 200px from the bottom before scrolling it
         document.getElementById(this.sidebarId).style.height = (window.screen.availHeight - 200) + 'px';
 
         // If there are no notes, create one
@@ -215,6 +216,7 @@ var SimpleNote = {
     },
 }
 
+// Start SimpleNote
 window.onload = function() {
     if (!localStorageSupport()) {
         document.getElementById("main").innerHTML = '<p id="error">Sorry, this browser does not appear to support local storage!</p>';

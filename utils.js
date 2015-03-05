@@ -1,5 +1,6 @@
 /* Misc utilities */
 
+// Returns a timestamp of the current time in the format YYYY-MM-DD HH:MM:SS
 if (typeof Date.prototype.getTimestamp != 'function') {
     Date.prototype.getTimestamp = function() {
         var dateInfo = [this.getFullYear(), this.getMonth() + 1, this.getDate()];
